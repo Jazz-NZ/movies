@@ -16,7 +16,7 @@ class CreateMoviesTable extends Migration
         Schema::create('movies', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->foreignid('movie_id');
+            $table->foreignid('director_id');
             $table->foreignid('genre_id');
             $table->timestamps();
         });
