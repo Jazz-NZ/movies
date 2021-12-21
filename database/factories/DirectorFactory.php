@@ -11,10 +11,8 @@ class DirectorFactory extends Factory
      *
      * @return array
      */
-    public function definition()
+    public function movies()
     {
-        return [
-            //
-        ];
+        return $this->hasMany(Movie::class);
     }
 }
